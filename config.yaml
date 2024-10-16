@@ -1,0 +1,17 @@
+ml_models: 
+  - LR
+  - SVM
+  - ExtraTrees
+  - RandomForest
+  - LightGBM
+  - MLP
+data_root: F:\20230608-XueYuHang\Pathology
+model_root: F:\20230608-XueYuHang\Pathology\models
+# label_file: D:\20231225-XueYuHang\split_info\label-RND-3.csv
+label_file: group.csv
+clinic_file: data\Clinical_Data.csv
+cnn_models: [resnet18, resnet50, resnet101, inception_v3, densenet121, vgg19]
+metric_spec: AUC
+metric_spec_ids: 
+metric_spec_agg: mean
+DISABLE_VIDEO: True
